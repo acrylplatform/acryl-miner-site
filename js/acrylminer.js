@@ -287,20 +287,20 @@
 				alert("Вы указали неверные контакты");
 			} else {
 
-				$.ajax({
-					url: "https://forms.amocrm.ru/queue/add",
-					type: 'post',
-					data: {
-						"fields[name_1]": $("#namepartner").val(),
-						"fields[543953_1][907777]": "+" + $("#phonepartner").val().replace(/\+| |\-|\(|\)/g, ""),
-						"fields[543955_1][907789]": $("#emailpartner").val(),
-						"fields[608791_1]": source,
-						"form_id": "515395",
-						"hash": "788ad99bed94945d0776f1302c78d840"
+                $.ajax({
+                    url: "https://forms.amocrm.ru/queue/add",
+                    type: 'post',
+                    data: {
+                        "fields[name_1]": $("#namepartner").val(),
+                        "fields[543953_1][907777]": "+" + $("#phonepartner").val().replace(/\+| |\-|\(|\)/g, ""),
+                        "fields[543955_1][907789]": $("#emailpartner").val(),
+                        "fields[608791_1]": source,
+                        "form_id": "515395",
+                        "hash": "788ad99bed94945d0776f1302c78d840"
 
-					},
-					crossDomain: true,
-					dataType: "jsonp"
+                    },
+					crossDomain: true
+					// dataType: "jsonp"
 				});
 				try {
 					gaSendEvent('not register Become a partner', $("#namepartner").val().toString());

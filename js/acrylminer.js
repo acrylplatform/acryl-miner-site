@@ -133,20 +133,20 @@
 			if (validateEmail($("#emailbuy").val()) === false || $("#phonebuy").val() === "") {
 				if (validateEmail($("#emailbuy").val()) === true || $("#phonebuy").val().length >= 8) {
 					console.log(source);
-                    $.ajax({
-                        url: "https://forms.amocrm.ru/queue/add",
-                        type: 'post',
-                        data: {
-                            "fields[name_1]": $("#namebuy").val(),
-                            "fields[543953_1][907777]": "+" + $("#phonebuy").val().replace(/\+| |\-|\(|\)/g, ""),
-                            "fields[543955_1][907789]": $("#emailbuy").val(),
-                            "fields[608791_1]": source,
-                            "form_id": "459268",
-                            "hash": "35d247b6ea0d2920c2f0c771f4688712"
-                        },
-                        crossDomain: true
-                        // dataType: "jsonp"
-                    });
+                    // $.ajax({
+                    //     url: "https://forms.amocrm.ru/queue/add",
+                    //     type: 'post',
+                    //     data: {
+                    //         "fields[name_1]": $("#namebuy").val(),
+                    //         "fields[543953_1][907777]": "+" + $("#phonebuy").val().replace(/\+| |\-|\(|\)/g, ""),
+                    //         "fields[543955_1][907789]": $("#emailbuy").val(),
+                    //         "fields[608791_1]": source,
+                    //         "form_id": "459268",
+                    //         "hash": "35d247b6ea0d2920c2f0c771f4688712"
+                    //     },
+                    //     crossDomain: true
+                    //     // dataType: "jsonp"
+                    // });
 				}
 				try {
 					gaSendEvent('Customers', $("#namepartner").val().toString());
@@ -261,20 +261,20 @@
 		$("#partnersubmit").click(function () {
 			if (validateEmail($("#emailpartner").val()) === false || $("#phonepartner").val() === "") {
 				if (validateEmail($("#emailpartner").val()) === true || $("#phonepartner").val().length >= 8) {
-					$.ajax({
-						url: "https://docs.google.com/forms/d/e/1FAIpQLSfjZO4eGMzQm-Geety4TWpBnpGxBqMLtIdGN3vbp_NWYVzKow/formResponse",
-						type: 'post',
-						data: {
-							"entry.292576426": $("#namepartner").val(),
-							"entry.927324316": $("#phonepartner").val().replace(/\+| |\-|\(|\)/g, ""),
-							"entry.782534400": $("#emailpartner").val(),
-							"entry.852532570": source
-
-
-						},
-						crossDomain: true,
-						dataType: "jsonp"
-					});
+					// $.ajax({
+					// 	url: "https://docs.google.com/forms/d/e/1FAIpQLSfjZO4eGMzQm-Geety4TWpBnpGxBqMLtIdGN3vbp_NWYVzKow/formResponse",
+					// 	type: 'post',
+					// 	data: {
+					// 		"entry.292576426": $("#namepartner").val(),
+					// 		"entry.927324316": $("#phonepartner").val().replace(/\+| |\-|\(|\)/g, ""),
+					// 		"entry.782534400": $("#emailpartner").val(),
+					// 		"entry.852532570": source
+					//
+					//
+					// 	},
+					// 	crossDomain: true,
+					// 	dataType: "jsonp"
+					// });
 				}
 				try {
 					gaSendEvent('Become a partner', $("#namepartner").val().toString());
@@ -288,13 +288,15 @@
 			} else {
 
 				$.ajax({
-					url: "https://docs.google.com/forms/d/e/1FAIpQLSfjZO4eGMzQm-Geety4TWpBnpGxBqMLtIdGN3vbp_NWYVzKow/formResponse",
+					url: "https://forms.amocrm.ru/queue/add",
 					type: 'post',
 					data: {
-						"entry.292576426": $("#namepartner").val(),
-						"entry.927324316": $("#phonepartner").val().replace(/\+| |\-|\(|\)/g, ""),
-						"entry.782534400": $("#emailpartner").val(),
-						"entry.852532570": source
+						"fields[name_1]": $("#namepartner").val(),
+						"fields[543953_1][907777]": "+" + $("#phonepartner").val().replace(/\+| |\-|\(|\)/g, ""),
+						"fields[543955_1][907789]": $("#emailpartner").val(),
+						"fields[608791_1]": source,
+						"form_id": "515395",
+						"hash": "788ad99bed94945d0776f1302c78d840"
 
 					},
 					crossDomain: true,

@@ -423,7 +423,7 @@
 		$("#shopsubmit").click(function () {
 			try {
 				gaSendButton('shop');
-				yaSendButton('click_shop')
+				yaSendButton('shop')
 			} catch (e) {}
 		});
         $("#youtube").click(function () {

@@ -1938,6 +1938,10 @@ a {
     line-height: 22px;
 }
 
+.footer-politics .textv2 {
+    color: #f4f3f4;
+}
+
 @media (max-width:1199px) {
     .first-banner-wrp {
         min-height: 650px

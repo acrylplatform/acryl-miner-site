@@ -379,11 +379,23 @@
             } catch (e) {}
         });
         $("#orderacrylb4").click(function () {
-            try {
-                gaSendButton('Knopka zakazat2');
-                yaSendButton('click_order2')
-            } catch (e) {}
-        });
+			try {
+				gaSendButton('Knopka zakazat2');
+				yaSendButton('click_order2')
+			} catch (e) {}
+		});
+		$("#shop").click(function () {
+			try {
+				gaSendButton('Knopka shop');
+				yaSendButton('click_shop')
+			} catch (e) {}
+		});
+		$("#shop1").click(function () {
+			try {
+				gaSendButton('Knopka shop');
+				yaSendButton('click_shop')
+			} catch (e) {}
+		});
         $("#downloaddocuments").click(function () {
             try {
                 gaSendButton('Dokument');
@@ -408,10 +420,10 @@
                 yaSendButton('click_tel')
             } catch (e) {}
         });
-		$("#buysubmit").click(function () {
+		$("#shopsubmit").click(function () {
 			try {
 				gaSendButton('shop');
-				yaSendButton('click_shop')
+				yaSendButton('shop')
 			} catch (e) {}
 		});
         $("#youtube").click(function () {

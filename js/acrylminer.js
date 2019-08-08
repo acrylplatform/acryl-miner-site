@@ -323,7 +323,7 @@
 
 		//Collect email
 		$("#emailSubmit").click(function () {
-			if (validateEmail($("#userEmail").val()) === true && $('#emailCh1').is(":checked") === true && $('#emailCh2').is(":checked") === true) {
+			if (validateEmail($("#userEmail").val()) === true && $('#emailCh1').is(":checked") === true) {
 				$.ajax({
 					url: "https://docs.google.com/forms/d/e/1FAIpQLSdJ-3_yFHuexV95aD2WkDc11fI2JRzle2_amwcnkAB3uClYgw/formResponse",
 					type: 'post',
@@ -353,9 +353,9 @@
 				if ($('#emailCh1').is(":checked") === false) {
 					infoText += bull + "Вы не согласились получать маркетинговую информацию\n";
 				}
-				if ($('#emailCh2').is(":checked") === false) {
-					infoText += bull + "Вы не согласились с Политикой конфиденциальности\n";
-				}
+				// if ($('#emailCh2').is(":checked") === false) {
+				// 	infoText += bull + "Вы не согласились с Политикой конфиденциальности\n";
+				// }
 				alert(infoText);
 			}
 		});
@@ -408,6 +408,12 @@
                 yaSendButton('click_tel')
             } catch (e) {}
         });
+		$("#buysubmit").click(function () {
+			try {
+				gaSendButton('shop');
+				yaSendButton('click_shop')
+			} catch (e) {}
+		});
         $("#youtube").click(function () {
             try {
                 yaSendButton('click_seti')

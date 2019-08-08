@@ -1925,6 +1925,19 @@ a {
     margin-bottom: 45px
 }
 
+.feedback-form .buttonv1 {
+    margin: 5px 0 0 0;
+}
+
+.textv1 {
+    float: left;
+    width: 100%;
+    color: #f4f3f4;
+    font-size: 18px;
+    letter-spacing: .47px;
+    line-height: 22px;
+}
+
 @media (max-width:1199px) {
     .first-banner-wrp {
         min-height: 650px

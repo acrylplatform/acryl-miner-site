@@ -194,69 +194,69 @@
 			}
 		});
 
-		$("#take").click(function () {
-			if ($("#phonebuy").val() === "") {
-				if ($("#phonebuy").val().length >= 8) {
-					console.log(source);
-					$.ajax({
-						url: "https://forms.amocrm.ru/queue/add",
-						type: 'post',
-						data: {
-							"fields[name_1]": $("#namebuy").val(),
-							"fields[543953_1][907777]": "+" + $("#phonebuy").val().replace(/\+| |\-|\(|\)/g, ""),
-							"fields[543955_1][907789]": "null@null.com",
-							"fields[608791_1]": source,
-							"form_id": "459268",
-							"hash": "35d247b6ea0d2920c2f0c771f4688712"
-						},
-						crossDomain: true
-						// dataType: "jsonp"
-					});
-				}
-				try {
-					gaSendEvent('Customers', $("#namepartner").val().toString());
-					FS.setUserVars({
-						"displayName": $("#namepartner").val().toString(),
-						"email": $("#emailbuy").val()
-					});
-				} catch (e) {
-				}
-				alert("Вы указали неверные контакты");
-
-			} else {
-
-				$.ajax({
-					url: "https://forms.amocrm.ru/queue/add",
-					type: 'post',
-					data: {
-						"fields[name_1]": $("#namebuy").val(),
-						"fields[543953_1][907777]": "+" + $("#phonebuy").val().replace(/\+| |\-|\(|\)/g, ""),
-						"fields[543955_1][907789]": "null@null.com",
-						"fields[608791_1]": source,
-						"form_id": "459268",
-						"hash": "35d247b6ea0d2920c2f0c771f4688712"
-					},
-					crossDomain: true
-					// dataType: "jsonp"
-				});
-				try {
-					gaSendEvent('not register customers', $("#namepartner").val().toString());
-					gaSendButton('Zakaz1');
-					yaSendButton('order1');
-					FS.setUserVars({
-						"displayName": $("#namepartner").val().toString(),
-						"email": $("#emailbuy").val()
-					});
-				} catch (e) {
-				}
-				var infoText = "";
-				infoText += ("Мы с вами свяжемся в ближайшее время") + "\n";
-				alert(infoText);
-				$("#emailbuy").val("");
-				$("#namebuy").val("");
-				$("#phonebuy").val("");
-			}
-		});
+		// $("#take").click(function () {
+		// 	if ($("#phonebuy").val() === "") {
+		// 		if ($("#phonebuy").val().length >= 8) {
+		// 			console.log(source);
+		// 			$.ajax({
+		// 				url: "https://forms.amocrm.ru/queue/add",
+		// 				type: 'post',
+		// 				data: {
+		// 					"fields[name_1]": $("#namebuy").val(),
+		// 					"fields[543953_1][907777]": "+" + $("#phonebuy").val().replace(/\+| |\-|\(|\)/g, ""),
+		// 					"fields[543955_1][907789]": "null@null.com",
+		// 					"fields[608791_1]": source,
+		// 					"form_id": "459268",
+		// 					"hash": "35d247b6ea0d2920c2f0c771f4688712"
+		// 				},
+		// 				crossDomain: true
+		// 				// dataType: "jsonp"
+		// 			});
+		// 		}
+		// 		try {
+		// 			gaSendEvent('Customers', $("#namepartner").val().toString());
+		// 			FS.setUserVars({
+		// 				"displayName": $("#namepartner").val().toString(),
+		// 				"email": $("#emailbuy").val()
+		// 			});
+		// 		} catch (e) {
+		// 		}
+		// 		alert("Вы указали неверные контакты");
+		//
+		// 	} else {
+		//
+		// 		$.ajax({
+		// 			url: "https://forms.amocrm.ru/queue/add",
+		// 			type: 'post',
+		// 			data: {
+		// 				"fields[name_1]": $("#namebuy").val(),
+		// 				"fields[543953_1][907777]": "+" + $("#phonebuy").val().replace(/\+| |\-|\(|\)/g, ""),
+		// 				"fields[543955_1][907789]": "null@null.com",
+		// 				"fields[608791_1]": source,
+		// 				"form_id": "459268",
+		// 				"hash": "35d247b6ea0d2920c2f0c771f4688712"
+		// 			},
+		// 			crossDomain: true
+		// 			// dataType: "jsonp"
+		// 		});
+		// 		try {
+		// 			gaSendEvent('not register customers', $("#namepartner").val().toString());
+		// 			gaSendButton('Zakaz1');
+		// 			yaSendButton('order1');
+		// 			FS.setUserVars({
+		// 				"displayName": $("#namepartner").val().toString(),
+		// 				"email": $("#emailbuy").val()
+		// 			});
+		// 		} catch (e) {
+		// 		}
+		// 		var infoText = "";
+		// 		infoText += ("Мы с вами свяжемся в ближайшее время") + "\n";
+		// 		alert(infoText);
+		// 		$("#emailbuy").val("");
+		// 		$("#namebuy").val("");
+		// 		$("#phonebuy").val("");
+		// 	}
+		// });
 
 		$("#partnersubmit").click(function () {
 			if (validateEmail($("#emailpartner").val()) === false || $("#phonepartner").val() === "") {
@@ -386,13 +386,13 @@
 		});
 		$("#shop").click(function () {
 			try {
-				gaSendButton('Knopka shop');
+				gaSendButton('shop');
 				yaSendButton('click_shop')
 			} catch (e) {}
 		});
 		$("#shop1").click(function () {
 			try {
-				gaSendButton('Knopka shop');
+				gaSendButton('shop');
 				yaSendButton('click_shop')
 			} catch (e) {}
 		});
@@ -426,23 +426,39 @@
 				yaSendButton('shop')
 			} catch (e) {}
 		});
+		$("#support").click(function () {
+			try {
+				gaSendButton('Support');
+				yaSendButton('Support')
+			} catch (e) {}
+		});
         $("#youtube").click(function () {
             try {
+				gaSendButton('Sotseti');
                 yaSendButton('click_seti')
             } catch (e) {}
         });
         $("#twitter").click(function () {
             try {
+				gaSendButton('Sotseti');
                 yaSendButton('click_seti')
             } catch (e) {}
         });
         $("#telegram").click(function () {
             try {
+				gaSendButton('Sotseti');
                 yaSendButton('click_seti')
             } catch (e) {}
         });
 		$("#github").click(function () {
 			try {
+				gaSendButton('Sotseti');
+				yaSendButton('click_seti')
+			} catch (e) {}
+		});
+		$("#facebok").click(function () {
+			try {
+				gaSendButton('Sotseti');
 				yaSendButton('click_seti')
 			} catch (e) {}
 		});

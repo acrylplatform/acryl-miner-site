@@ -456,7 +456,7 @@
 				yaSendButton('click_seti')
 			} catch (e) {}
 		});
-		$("#facebok").click(function () {
+		$("#facebook").click(function () {
 			try {
 				gaSendButton('Sotseti');
 				yaSendButton('click_seti')
@@ -484,7 +484,7 @@
 		$("#github").click(function() {
 			window.open('https://github.com/acrylplatform','_blank')
 		});
-		$("#facebok").click(function() {
+		$("#facebook").click(function() {
 			window.open('https://www.facebook.com/acrylplatformofficial','_blank')
 		});
 		$("#weisswaters").click(function() {

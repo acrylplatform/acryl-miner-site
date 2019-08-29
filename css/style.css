@@ -1929,6 +1929,11 @@ a {
     margin: 5px 0 0 0;
 }
 
+.requisites {
+    color:white;
+    line-height:18px;
+}
+
 .textv1 {
     float: left;
     width: 100%;

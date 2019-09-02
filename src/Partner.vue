@@ -14,6 +14,7 @@
                     <div class="feedback-form">
                         <form>
                             <input id="namepartner" aria-label="namepartner" type="text" name="name" :placeholder="$t('partner.name')">
+                            <select id="phonecodepartner"></select>
                             <input id="phonepartner" aria-label="phonepartner" type="tel" name="phone" :placeholder="$t('partner.phone')">
                             <input id="emailpartner" aria-label="emailpartner" type="text" name="email" placeholder="E-mail" required="required">
                             <button id="partnersubmit" type="button" class="basic-button orange order">{{ $t('partner.call') }}</button>

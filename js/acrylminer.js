@@ -123,19 +123,11 @@
 			}
 		});
 
+	phoneCodes(['#phonecodebuy','#phonecodepartner']);
+
 	$(document).ready(function() {
 		//Create phone mask
 		if ($('input[type=tel]').length > 0) {
-			$.ajax({
-                url: "http://api.sypexgeo.net/json",
-                success: function(data){
-					console.log(data)
-					var mask = "+"
-					data.country.phone ? mask += data.country.phone : mask += "9"
-					mask += " (999) 999-99-99"
-					$('input[type=tel]').inputmask(mask);
-                }
-            });
 			$("input[type=tel]").inputmask({"clearIncomplete": true});
 		}
 		$("#buysubmit").click(function () {

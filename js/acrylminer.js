@@ -126,7 +126,7 @@
 	$(document).ready(function() {
 		//Create phone mask
 		if ($('input[type=tel]').length > 0) {
-			$('input[type=tel]').inputmask('+9 (999) 999-99-99');
+			// $('input[type=tel]').inputmask('+9 (999) 999-99-99');
 			$("input[type=tel]").inputmask({"clearIncomplete": true});
 		}
 		$("#buysubmit").click(function () {

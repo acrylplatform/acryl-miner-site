@@ -487,6 +487,14 @@
 		$("#facebook").click(function() {
 			window.open('https://www.facebook.com/acrylplatformofficial','_blank')
 		});
+		$("#shop").click(function() {
+			if (localStorage.getItem('utm_source')) {
+				source = localStorage.getItem('utm_source');
+				window.open('https://shop.acrylminer.com/?utm_source=' + source,'_blank')
+            } else {
+				window.open('https://shop.acrylminer.com/','_blank')
+			}
+		});
 		$("#weisswaters").click(function() {
 			infoalert()
 		});

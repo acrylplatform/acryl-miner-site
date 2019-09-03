@@ -22,7 +22,7 @@
                             <a class="nav-link" href="#partner">{{ $t('links.partner') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a id="shop" class="nav-link" href="https://shop.acrylminer.com">{{ $t('links.shop') }}</a>
+                            <a id="shop" class="nav-link" href="#">{{ $t('links.shop') }}</a>
                         </li>
                         <li class="nav-item">
                             <a id="support" class="nav-link" href="https://support.acrylminer.com">{{ $t('links.support') }}</a>

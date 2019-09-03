@@ -15,6 +15,7 @@
                         <span class="feedback-form-title">{{ $t('order.feedback') }}</span>
                         <form>
                             <input id="namebuy" type="text" aria-label="namebuy" name="name" :placeholder="$t('order.name')">
+                            <select id="phonecodebuy"></select>
                             <input id="phonebuy" type="tel" aria-label="phonebuy" name="phone" :placeholder="$t('order.phone')">
                             <input id="emailbuy" type="text" aria-label="emailbuy" name="email" placeholder="E-mail">
                             <button id="buysubmit" type="button" class="basic-button orange order">{{ $t('order.buy') }}</button>

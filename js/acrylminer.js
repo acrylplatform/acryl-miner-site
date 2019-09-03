@@ -123,10 +123,11 @@
 			}
 		});
 
+	phoneCodes(['#phonecodebuy','#phonecodepartner']);
+
 	$(document).ready(function() {
 		//Create phone mask
 		if ($('input[type=tel]').length > 0) {
-			$('input[type=tel]').inputmask('+9 (999) 999-99-99');
 			$("input[type=tel]").inputmask({"clearIncomplete": true});
 		}
 		$("#buysubmit").click(function () {
@@ -486,6 +487,14 @@
 		});
 		$("#facebook").click(function() {
 			window.open('https://www.facebook.com/acrylplatformofficial','_blank')
+		});
+		$("#shop").click(function() {
+			if (localStorage.getItem('utm_source')) {
+				source = localStorage.getItem('utm_source');
+				window.open('https://shop.acrylminer.com/?utm_source=' + source,'_blank')
+            } else {
+				window.open('https://shop.acrylminer.com/','_blank')
+			}
 		});
 		$("#weisswaters").click(function() {
 			infoalert()

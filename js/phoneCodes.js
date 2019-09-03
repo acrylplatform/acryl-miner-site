@@ -31,7 +31,7 @@ function phoneCodes(arr) {
     }
 
     $.ajax({
-        url: "http://api.sypexgeo.net/json",
+        url: "https://api.sypexgeo.net/json",
         success: function(data){
             var code = "+355";
             data.country.phone ? code = "+" + data.country.phone : code = codes[0].code ;

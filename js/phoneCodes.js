@@ -48,8 +48,8 @@ function phoneCodes(arr) {
                 $(arr[j]).val(data);
             }
             data = data.replace("9", "\\9");
-            var mask = data + " (999) 999-99-99";
-            $('input[type=tel]').inputmask(mask);
+            var mask = data + "9{5,20}";
+            $('input[type=tel]').inputmask(mask, { "placeholder": " " });
         });
     }
 }

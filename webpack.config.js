@@ -42,7 +42,7 @@ module.exports = {
         new VueLoaderPlugin(),
         new HtmlWebpackPlugin({
             inject: false,
-            filename: 'index.html',
+            filename: '../index.html',
             template: './src/template.html'
         }),
         new MiniCssExtractPlugin({

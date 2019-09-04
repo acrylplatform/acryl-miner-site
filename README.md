@@ -10,9 +10,9 @@ To build a site you need to run the command
 npm run build
 ```
 
-`bundle.js` и `index.html` will be collected in a folder `dist/`
+`bundle.js` will be collected in a folder `dist/`
 
-`index.html` will be moved to the root of the project
+`index.html` will be collected in a root
 
 ## Deploy
 

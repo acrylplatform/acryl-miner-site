@@ -6,7 +6,7 @@ module.exports = {
     mode: 'production',
     entry: {
         app: './src/main.js',
-        style: './css/style.css'
+        style: './css/style.less'
     },
     output: {
         filename: '[name].[contenthash].js'
@@ -22,12 +22,15 @@ module.exports = {
             loader: 'vue-loader'
         },
         {
-            test: /\.css$/,
+            test: /\.less$/,
             use: [
                 MiniCssExtractPlugin.loader,
                 {
                     loader: 'css-loader',
                     options: { url: false }
+                },
+                {
+                    loader: 'less-loader',
                 }
             ]
         },

@@ -2258,6 +2258,11 @@ a {
         text-align: center;
         margin-bottom: 30px
     }
+
+    .networkspad {
+        padding: 3px;
+    }
+
     .networks {
         float: none;
         margin: 0 auto;

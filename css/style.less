@@ -208,10 +208,16 @@ a {
 	z-index: 100;
 	.navbar{
 		padding: 0;
-		padding-top: 85px;
+		padding-top: 10px;
+		position: fixed;
+		background: #000;
+		width: 100%;
+		left: 0;
 		.navbar-brand{
 			width: 140px;
 			padding: 0;
+			position: relative;
+			margin-left: 180px;
 			img{
 				float: left;
 				width: 100%;
@@ -220,6 +226,7 @@ a {
 		.navbar-collapse{
 			-webkit-justify-content: flex-end;
 			        justify-content: flex-end;
+			margin-right: 130px;
 		    .navbar-nav{
 		    	li{
 		    		padding: 0 8px;
@@ -990,7 +997,7 @@ a {
 	width: 100%;
 	padding: 150px 0;
 	position: relative;
-	z-index: 400;
+	z-index: 80;
 	&>picture{
 		position: absolute;
 		left: 0;
@@ -1466,7 +1473,7 @@ a {
 		font-family: 'TTNorms-Medium';
 		margin-bottom: 35px;
 	}
-	input{
+	input, select{
 		float: left;
 		width: 100%;
 		height: 41px;
@@ -1479,6 +1486,9 @@ a {
 		font-size: 18px;
 		letter-spacing: 0.5px;
 		color: #FFF;
+	}
+	option {
+		color: black;
 	}
 	.order{
 		width: 100%;
@@ -1500,7 +1510,10 @@ a {
 	}
 }
 .principle-row{
-	width: 104%;
+	float: none;
+	margin: 0 auto;
+	width: 102%;
+	max-width: 980px;
 	position: relative;
 	z-index: 40;
 	&:before{
@@ -1511,7 +1524,7 @@ a {
 		-webkit-background-size: 100% 100%;
 		     -o-background-size: 100% 100%;
 		        background-size: 100% 100%;
-		width: 1070px;
+		width: 935px;
 		height: 475px;
 		z-index: -1;
 		position: absolute;
@@ -1583,7 +1596,7 @@ a {
 			float: left;
 			width: 100%;
 			text-align: right;
-			font-size: 16px;
+			font-size: 17px;
 			color: #000;
 			line-height: 22px;
 		}

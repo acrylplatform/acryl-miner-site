@@ -451,6 +451,12 @@
                 yaSendButton('click_seti')
             } catch (e) {}
         });
+        $("#vk").click(function () {
+            try {
+                gaSendButton('Sotseti');
+                yaSendButton('click_seti')
+            } catch (e) {}
+        });
 		$("#github").click(function () {
 			try {
 				gaSendButton('Sotseti');
@@ -482,6 +488,9 @@
 		$("#telegram").click(function() {
             window.open('https://t.me/Acrylplatform','_blank')
 		});
+        $("#vk").click(function() {
+            window.open('https://vk.com/acrylplatform','_blank')
+        });
 		$("#github").click(function() {
 			window.open('https://github.com/acrylplatform','_blank')
 		});

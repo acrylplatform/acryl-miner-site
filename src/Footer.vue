@@ -17,7 +17,7 @@
                     <div class="requisites">{{ $t('footer.ca') }}: 30101810645250000092</div>
                     <div class="requisites">{{ $t('footer.account') }}: 40702810070010147423</div>
                     <div class="requisites">E-mail: <a style="color:white;" href="mailto:sales@acrylminer.com">sales@acrylminer.com</a></div>
-                    <div class="requisites">Support: <a style="color:white;" href="mailto:support@acryl.omnidesk.ru">support@acryl.omnidesk.ru</a></div>
+                    <div class="requisites">Support: <a style="color:white;" href="mailto:support@acryl.omnidesk.ru">support@acrylplatform.com</a></div>
                 </div>
                 <div class="col-md-6 search-form-wrp">
                     <span class="subscribe-title">{{ $t('footer.subscribeTitle1') }}<br> {{ $t('footer.subscribeTitle2') }}</span>
@@ -51,7 +51,7 @@
                         <li><a id="orderacrylb3" href="#order">{{ $t('links.order') }}</a></li>
                         <li><a href="#partner">{{ $t('links.partner') }}</a></li>
                         <li><a id="shop1" href="https://shop.acrylminer.com">{{ $t('links.shop') }}</a></li>
-                        <li><a id="support" href="https://support.acrylminer.com">{{ $t('links.support') }}</a></li>
+                       // <li><a id="support" href="https://support.acrylminer.com">{{ $t('links.support') }}</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-5 col-md-4">

@@ -24,9 +24,6 @@
                         <li class="nav-item">
                             <a id="shop" class="nav-link" href="#">{{ $t('links.shop') }}</a>
                         </li>
-                       // <li class="nav-item">
-                       //     <a id="support" class="nav-link" href="https://support.acrylminer.com">{{ $t('links.support') }}</a>
-                       // </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" @click="$emit('switch-lang', 'en')" v-if="this.$i18n.locale == 'ru'">English</a>
                             <a class="nav-link" href="#" @click="$emit('switch-lang', 'ru')" v-else>Russian</a>

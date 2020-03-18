@@ -51,7 +51,6 @@
                         <li><a id="orderacrylb3" href="#order">{{ $t('links.order') }}</a></li>
                         <li><a href="#partner">{{ $t('links.partner') }}</a></li>
                         <li><a id="shop1" href="https://shop.acrylminer.com">{{ $t('links.shop') }}</a></li>
-                       // <li><a id="support" href="https://support.acrylminer.com">{{ $t('links.support') }}</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-5 col-md-4">
